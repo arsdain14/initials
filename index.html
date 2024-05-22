@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brent Caletisen Magat</title>
+</head>
+<style>
+    #canvas{
+        border: 2px solid black
+    }
+</style>
+<body>
+    <canvas id="canvas" width="1080" height="720">
+        <script>
+            var canvas = document.getElementById('canvas');
+            var line = canvas.getContext('2d');
+            line.lineWidth = 5.0;
+            line.strokeStyle = 'black';
+            line.beginPath(); <!-- B -->
+            line.moveTo(50, 50);
+            line.lineTo(50, 400);
+            line.moveTo(45, 50);
+            line.lineTo(45, 400);
+            line.lineTo(200, 400);
+            line.lineTo(200, 200);
+            line.lineTo(50,200)
+            line.moveTo(50, 50);
+            line.lineTo(175, 50);
+            line.lineTo(175, 200);
+            line.stroke();
+            line.beginPath(); <!-- C -->
+            line.moveTo(500, 50);
+            line.lineTo(350,50);
+            line.lineTo(350, 400);
+            line.moveTo(345, 50);
+            line.lineTo(345, 400);
+            line.lineTo(550,400);
+            line.stroke();
+            line.beginPath() <!-- M -->
+            line.moveTo(700, 400);
+            line.lineTo(700, 50);
+            line.moveTo(695, 400);
+            line.lineTo(695, 45);
+            line.lineTo(850, 200);
+            line.lineTo(1000, 50);
+            line.lineTo(1000, 400);
+            line.stroke()
+        </script>
+    </canvas>
+</body>
+</html>
